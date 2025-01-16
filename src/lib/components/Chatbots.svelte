@@ -17,7 +17,7 @@
 			const tl = gsap.timeline({
 				scrollTrigger: {
 					scrub: 1,
-					trigger: '#chatbots'
+					trigger: '.chatbots'
 				}
 			});
 
@@ -29,7 +29,7 @@
 </script>
 
 <div id="pin-windmill" class="mt-12">
-	<div id="chatbots">
+	<div class="chatbots">
 		<div class="flex justify-center items-center mb-6 md:mb-12">
 			<h1 class="text-[10vw] font-bold chatbots-text text-nowrap overflow-x-clip flex items-center  translate-x-1/2">
 				<p class="text-orange-500">//</p>AI IS NOT JUST A COURSE <p class="text-orange-500">//</p>

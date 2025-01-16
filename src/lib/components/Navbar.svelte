@@ -59,9 +59,9 @@
     
         <div class="fixed inset-0 backdrop-blur-xl z-[100] md:hidden {isMobileMenuOpen ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200">
             <div class="flex flex-col items-center justify-center h-full space-y-8 text-2xl">
-                <a href="#about" on:click={toggleMenu} class="hover:text-red-600" style="transition: opacity 0.5s; opacity: {isMobileMenuOpen ? 1 : 0}; transition-delay: 0.25s;">Read</a>
-                <a href="#chatbots" on:click={toggleMenu} class="hover:text-red-600" style="transition: opacity 0.5s; opacity: {isMobileMenuOpen ? 1 : 0}; transition-delay: 0.25s;">Talk</a>
-                <a href="#chatbots" on:click={toggleMenu} class="hover:text-red-600" style="transition: opacity 0.5s; opacity: {isMobileMenuOpen ? 1 : 0}; transition-delay: 0.25s;">Hear</a>
+                <a href="/" on:click={toggleMenu} class="hover:text-red-600" style="transition: opacity 0.5s; opacity: {isMobileMenuOpen ? 1 : 0}; transition-delay: 0.25s;">Read</a>
+                <a href="/" on:click={toggleMenu} class="hover:text-red-600" style="transition: opacity 0.5s; opacity: {isMobileMenuOpen ? 1 : 0}; transition-delay: 0.25s;">Talk</a>
+                <a href="/" on:click={toggleMenu} class="hover:text-red-600" style="transition: opacity 0.5s; opacity: {isMobileMenuOpen ? 1 : 0}; transition-delay: 0.25s;">Hear</a>
             </div>
         </div>
     

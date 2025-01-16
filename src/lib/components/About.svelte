@@ -17,7 +17,7 @@
             mm.add("(min-width: 1024px)", () => {
                 let tl = gsap.timeline({
                     scrollTrigger: {
-                        trigger: '#about',
+                        trigger: '.about',
                         pin: true,
                         start: 'top 0%',
                         end: 'top -100%',
@@ -133,7 +133,7 @@
     });
 </script>
 
-<section class="px-4 md:px-8 py-8  flex flex-col lg:flex-row items-center  lg:space-y-0 lg:space-x-16 min-h-screen" id="about">
+<section class="px-4 md:px-8 py-8  flex flex-col lg:flex-row items-center  lg:space-y-0 lg:space-x-16 min-h-screen about">
     <!-- Left Section -->
     <div class="text-[12vw] leading-none  w-1/2 flex-col">
         <p>About</p>

@@ -28,7 +28,7 @@
 	});
 </script>
 
-<div id="pin-windmill" class="mt-12">
+<div id="pin-windmill" class="mt-12 overflow-x-hidden">
 	<div class="chatbots">
 		<div class="flex justify-center items-center mb-6 md:mb-12">
 			<h1 class="text-[10vw] font-bold chatbots-text text-nowrap overflow-x-clip flex items-center  translate-x-1/2">

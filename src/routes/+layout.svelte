@@ -28,7 +28,7 @@
 		<div class="md:border-t border-black max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 ">
 		  <!-- Logo Section -->
 		  <div class="grid items-center justify-center mx-auto md:justify-start">
-			<img src="logo.png" alt="Dunderville Bird Logo" class="max-w-[15vw] max-h-[15vw]"/>
+			<img src="/logo.png" alt="Dunderville Bird Logo" class="max-w-[15vw] max-h-[15vw]"/>
 		  </div>
 	  
 		  <!-- General Info Section -->

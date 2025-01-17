@@ -1,20 +1,18 @@
-import { asText } from '@prismicio/client';
-
+import { error } from '@sveltejs/kit';
 import { createClient } from '$lib/prismicio';
 
-export async function load({ fetch, cookies }) {
-	const client = createClient({ fetch, cookies });
+export async function load({ fetch, request }) {
+	const client = createClient({ fetch });
 
-	const page = await client.getSingle("blogs");
-
-	return {
-		page,
-		title: page.data.meta_title,
-		meta_description: page.data.meta_description,
-		meta_title: page.data.meta_title,
-		meta_image: page.data.meta_image.url,
-		
-	};
+	try {
+		const page = await client.getSingle('blogs');
+		return { page };
+	} catch (e) {
+		// Log the error for debugging
+		console.error('Prismic Error:', e);
+		// Throw a user-friendly error
+		throw error(404, 'Page not found');
+	}
 }
 
 export function entries() {

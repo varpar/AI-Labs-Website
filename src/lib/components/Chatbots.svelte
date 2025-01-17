@@ -2,8 +2,6 @@
 	import { onMount } from 'svelte';
 
 	let gsap;
-	const left = '<<<<<';
-	const right = '>>>>';
 	let ScrollTrigger;
 
 	onMount(async () => {
@@ -28,7 +26,7 @@
 	});
 </script>
 
-<div id="pin-windmill" class="mt-12 overflow-x-hidden">
+<div id="pin-windmill" class="mt-12 overflow-y-visible">
 	<div class="chatbots">
 		<div class="flex justify-center items-center mb-6 md:mb-12">
 			<h1 class="text-[10vw] font-bold chatbots-text text-nowrap overflow-x-clip flex items-center  translate-x-1/2">
@@ -55,7 +53,7 @@
 			<img
 				src="arrow-smooth.png"
 				alt="arrow"
-				class="hidden md:block w-16 md:w-[10vw] -rotate-[30deg] -scale-x-[1] z-[100] mx-4"
+				class="hidden md:block w-16 md:w-[10vw] -rotate-[30deg] scale-125 -scale-x-[1.25] z-[100] mx-4"
 			/>
 
 			<div class="flex flex-col justify-center text-center w-fit mt-4" id="chats">
@@ -67,7 +65,7 @@
 		</div>
 
 
-		<div class="flex flex-col md:flex-row h-[90vh] md:h-[70vh] items-center mx-auto justify-center mt-12 md:mt-28">
+		<div class="flex flex-col md:flex-row h-[90vh] md:h-[70vh] items-center mx-auto justify-center mt-12 md:mt-28 ">
 			<div class="flex flex-col justify-center text-center w-fit mb-4" id="chats">
 				<p class="text-lg md:text-xl font-bold italic">for</p>
             <p class="text-4xl md:text-6xl font-bold">Teachers</p>
@@ -75,10 +73,10 @@
 				<p class="text-4xl md:text-6xl font-bold">Experiment</p>
 			</div>
 
-			<img src="arrow-smooth.png" alt="arrow" class="hidden md:block w-16 md:w-[10vw] rotate-[30deg] z-[100] mx-4" />
+			<img src="arrow-smooth.png" alt="arrow" class="hidden md:block w-16 md:w-[10vw] rotate-[30deg] scale-125 z-[100] mx-4 " />
 
-			<div class="relative w-3/4 md:w-1/3 h-full">
-				<div class="absolute top-4 right-4 md:top-15 md:right-15 w-full h-full bg-black bg-opacity-30 z-0"></div>
+			<div class="relative w-3/4 md:w-1/3 h-full ">
+				<div class="absolute top-4 left-4 md:top-15 md:left	-15 w-full h-full bg-black bg-opacity-30 z-0"></div>
 				<iframe
 					id="embed-preview-iframe"
 					loading="eager"
@@ -95,3 +93,10 @@
 	</div>
 </div>
 
+
+<style>
+	#pin-windmill {
+		overflow: hidden;
+	}
+
+</style>

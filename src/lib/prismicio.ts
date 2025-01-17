@@ -15,7 +15,9 @@ export const repositoryName = import.meta.env.VITE_PRISMIC_ENVIRONMENT || sm.rep
 // TODO: Update the routes array to match your project's route structure.
 const routes: prismic.ClientConfig['routes'] = [
 	{ type: 'page', path: '/', uid: 'home' },
-	{ type: 'page', path: '/:uid' }
+	{ type: 'blogs', path: '/read' },
+	{ type: 'blog', path: '/read/:uid' },
+	{ type: 'page', path: '/hear' },
 ];
 
 /**

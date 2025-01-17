@@ -140,7 +140,7 @@
     <ul class="hidden md:flex items-center gap-4 justify-around p-4 cofo w-1/2 text-xl z-[100000]">
         <li>
             <a
-                href="/"
+                href="/read"
                 on:mouseenter={() => handleMouseEnter('purple')}
                 on:mouseleave={handleMouseLeave}>Read</a
             >
@@ -154,7 +154,7 @@
         </li>
 		<li>
             <a
-                href="/"
+                href="/hear"
                 on:mouseenter={() => handleMouseEnter('black')}
                 on:mouseleave={handleMouseLeave}>Hear</a
             >

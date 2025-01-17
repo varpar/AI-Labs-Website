@@ -8,5 +8,11 @@ export default defineConfig({
 			// Allow access to files from the project root.
 			allow: ['..']
 		}
+	},
+	ssr: {
+		noExternal: [
+			'gsap',
+			'@gsap/shockingly',
+		],
 	}
 });

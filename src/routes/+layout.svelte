@@ -8,9 +8,9 @@
 	let isLoaded = false;
 
 	onMount(() => {
-		setTimeout(() => {
-			isLoaded = true;
-		}, 300);
+			setTimeout(() => {
+				isLoaded = true;
+			}, 300);
 	});
 
 </script>
@@ -19,12 +19,12 @@
 <div class="transition-opacity duration-500 ease-[cubic-bezier(0.2,0,0,1)]  {isLoaded ? 'opacity-100' : 'opacity-0'}">
 
 	<header class="">
-		<Navbar />
+		<!-- <Navbar /> -->
 	</header>
 	<main>
 		<slot />
 	</main>
-	  <footer class="mt-36 py-12 px-4 md:px-8">
+	  <footer class="mt-24 py-12 px-4 md:px-8">
 		<div class="md:border-t border-black max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 ">
 		  <!-- Logo Section -->
 		  <div class="grid items-center justify-center mx-auto md:justify-start">
